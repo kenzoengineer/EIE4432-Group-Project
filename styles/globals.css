@@ -7,6 +7,11 @@ body {
     border: none;
 }
 
+.btn-primary:hover {
+    background-color: grey;
+    border: none;
+}
+
 .footer-link {
     font-weight: bold;
     text-decoration: none;

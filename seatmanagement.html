@@ -66,22 +66,37 @@
         <main>
             <section class="container mb-2">
                 <div class="row my-3">
-                    <h1>Booking.</h1>
+                    <h1>Seat Management.</h1>
                 </div>
             </section>
 
             <section class="container mb-2 border-start border-3 border-black">
-                <div class="row">
-                    <div>
-                        Selecting seats for:
+                Airbus A320-200 Seat Map
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="form-spc"spc placeholder="">
+                                <label for="form-spc">Seats per column</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="form-cpp" placeholder="">
+                                <label for="form-cpp">Columns per plane</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="form-rpp" placeholder="">
+                                <label for="form-rpp">Rows per plane</label>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
-                    <h4>
-                        HKG -> YYZ
-                    </h4>
-                </div>
-            </section>
-
-            <section class="container d-flex justify-content-center">
+                </form>
                 <svg id="seatmap" width="350px" height="275px">
                     <rect class="seat" x="25" y="25" width="50" height="50" rx="10" ry="10"></rect>
                     <text x="50" y="50" fill="black" text-anchor="middle" alignment-baseline="central">D1</text>
@@ -138,27 +153,7 @@
                     <text x="300" y="225" fill="black" text-anchor="middle" alignment-baseline="central">A6</text>
 
                 </svg>
-            </section>
 
-            <section class="container d-flex flex-row align-items-center justify-content-center mb-3">
-                <div class="mx-2">
-                    <b>Selected seat:</b>
-                </div>
-                <div class="emphasis-text">
-                    C3
-                </div>
-
-                <div class="mx-2">
-                    <b>For:</b>
-                </div>
-                <div class="emphasis-text">
-                    HKD 19,720
-                </div>
-            </section>
-
-            <section class="container d-flex justify-content-center">
-                <button type="button" class="btn btn-primary mx-1">Confirm</button>
-                <button type="button" class="btn btn-outline-secondary mx-1">Deselect</button>
             </section>
         </main>
         <footer class="footer fixed-bottom bg-light">

@@ -9,10 +9,30 @@
         <title>Flight Booking System</title>
 
         <style>
-            .form-floating {
-                margin-bottom: 1em;
+            .seat {
+                fill: white;
+                stroke: black;
+                stroke-width: 3px;
+            }
+
+            .selected-seat {
+                fill: #c6ffc6;
+            }
+
+            .occupied-seat {
+                fill: #ffd1c6;
+            }
+
+            .emphasis-text {
+                font-weight: bold;
+                font-size: 2rem;
+                color: white;
+                background-color: black;
+                padding: 0 0.2em;
+                transform: skewX(-10deg);
             }
         </style>
+
     </head>
     <body>
         <header>
@@ -46,53 +66,15 @@
         <main>
             <section class="container mb-2">
                 <div class="row my-3">
-                    <h1>Payment.</h1>
+                    <h1>Admin.</h1>
                 </div>
             </section>
-            <section class="container mb-5">
-                <div class="row">
-                    <div class="col-6 border-start border-3 border-black">
-                        <div>HKG -> YYZ</div>
-                        <div>11-29-2023 // 00:35-5:25</div> 
-                        <div>Seat C3 // HKD 19,720</div>
-                    </div>
-                    <div class="col-6 text-end">
-                        <div>Payment Status: <span style="color: #dd8585; font-weight: bold;">Pending</span></div>
-                    </div>
-                </div>
+
+            <section class="container mb-2 border-start border-3 border-black">
+                <a href="./seatmanagement.html" type="button" class="btn btn-outline-secondary">Change Seat Maps</a>
             </section>
-            <section class="container mb-2">
-                <form>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="form-email" placeholder="name@example.com">
-                        <label for="form-email">Email address</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="form-name" placeholder="John Doe">
-                        <label for="form-name">Cardholder Name</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="form-card-number" placeholder="John Doe">
-                        <label for="form-card-number">Card Number</label>
-                    </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="form-expiry" placeholder="MM/YYYY">
-                                <label for="form-expiry">Expiry Date</label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="form-cvv" placeholder="John Doe">
-                                <label for="form-cvv">CVV</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+            <section class="container mb-2 border-start border-3 border-black">
+                <a href="./eventmanagement.html" type="button" class="btn btn-outline-secondary">Update Flight Listings</a>
             </section>
         </main>
         <footer class="footer fixed-bottom bg-light">
