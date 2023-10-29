@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link href="../styles/globals.css" rel="stylesheet"/>
+
+    <title>Flight Booking System</title>
+</head>
+
+<body>
+  <div class="d-flex align-items-center justify-content-center vh-100">
+    <div class="container bg-light p-5 border rounded w-50 mx-auto">
+      <div class="container w-75">
+        <div class="pb-3">
+          <h1 class="text-center"><img src="./imgs/airplane_logo.svg" style="width:40px;"> Sign Up To Book Flights! 
+          </h1>
+        </div>
+        <form class="flex-column">
+          <div class="form-group pb-2">
+            <label for="name">User ID:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group pb-2">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group pb-2">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          </div>
+          <div class="form-group pb-2">
+            <label for="nickname">Nickname:</label>
+            <input type="text" class="form-control" id="nickname" placeholder="Enter your nickname">
+          </div>
+          <div class="row ">
+            <div class="col form-group pb-2">
+              <label for="gender">Gender:</label>
+              <input type="text" class="form-control" id="gender" placeholder="Enter your gender">
+            </div>
+            <div class="col form-group pb-2">
+              <label for="bday">Birthday:</label>
+              <input type="date" class="form-control" id="bday" placeholder="Enter your birthday">
+            </div>
+          </div>
+          <div class="form-group py-3">
+            <label for="profile-picture">Profile Picture:</label>
+            <input type="file" class="form-control-file" id="profile-picture">
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-dark">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
