@@ -1,0 +1,22 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary {
+    background-color: black;
+    border: none;
+}
+
+.footer-link {
+    font-weight: bold;
+    text-decoration: none;
+    color:#AAA;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h3 {
+    margin: 0px;
+}
